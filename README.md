@@ -4,7 +4,7 @@ Construção de um aplicativo para recomendação de livros, com o uso do [Strea
 
 O usuário seleciona um livro e o número de recomendações que deseja receber e o aplicativo retornará uma lista com as recomendações em ordem de preferência e uma imagem com a capa dos 5 primeiros livros da lista.
 
-Segue imagens do aplicativo em uso: 
+Segue imagem do aplicativo em uso: 
 
 ![alt text](https://github.com/LuccaFurtado/images/blob/main/books%20recommendations%20sytem.png)
 
