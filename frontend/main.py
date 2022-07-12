@@ -9,15 +9,15 @@ st.title('Books Recommender System')
 a= list(pd.read_csv("data/filtered.csv")["Book-Title"].unique())
 
 option = st.selectbox(
-    'Book to recommend',
+    'Select a book',
     (a)
 )
-number = st.slider('How many recomendations do you want?', 0, 20, 5)
+number = st.slider('How many recommendations do you want?', 0, 20, 5)
 
 
-if st.button('Get Recomendations'):
+if st.button('Get Recommendations'):
     if option is not None:
-        st.write('Recomendations:')
+        st.write('Recommendations:')
         option = json.dumps({"name": option ,
                              "n":number})
         res = requests.post(f"http://backend:8080/recomend_item", data= option)
